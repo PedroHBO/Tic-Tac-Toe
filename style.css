@@ -1,0 +1,72 @@
+body {
+    text-align: center;
+    background-color: grey;
+    font-family: monospace;
+}
+
+.logo {
+    font-size: 1.5rem;
+    transition-duration: 1s;
+}
+
+.logo:hover{
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem;
+    transition-duration: 1s;
+}
+
+.column {
+    font-size: 2rem;
+    text-align: center;
+    width: 2rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(150, 148, 148, 0.733);
+    color: transparent;
+}
+
+.info {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.2rem;
+    border: 0.12rem black solid;
+    border-radius: 5%;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    background-color: rgb(131, 42, 42);
+    transition-duration: 1s;
+
+}
+
+.player {
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 420px) {
+    .logo {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        transition-duration: 1s;
+    }
+    .logo:hover{
+        letter-spacing: 0.5rem;
+        font-size: 1.0rem;
+        transition-duration: 1s;
+    }
+    .column {
+        font-size: 1rem;
+        text-align: center;
+        width: 1.5rem;
+        padding: 1.5rem;
+        margin: 0.5rem;
+    }
+}

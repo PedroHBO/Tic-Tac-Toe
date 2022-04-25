@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="tictactoe.png" type="image/x-icon">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="game">
+            <div class="rows">
+                <div id="1" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="2" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="3" class="column" onclick="getColumn(this.id)">-</div>
+            </div>
+
+            <div class="rows">
+                <div id="4" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="5" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="6" class="column" onclick="getColumn(this.id)">-</div>
+            </div>
+
+            <div class="rows">
+                <div id="7" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="8" class="column" onclick="getColumn(this.id)">-</div>
+                <div id="9" class="column" onclick="getColumn(this.id)">-</div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="player">
+                Player: <label id="currentPlayer"></label>
+            </div>
+            <div class="player">
+                Winner: <label id="winnerPlayer"></label>
+            </div>
+            <button class="btn" onclick="window.location.reload()">Reiniciar</button>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
